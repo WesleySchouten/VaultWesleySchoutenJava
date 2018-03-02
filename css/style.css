@@ -1,0 +1,44 @@
+body  {
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+  font-size: 15px;
+}
+#number-container {
+  background-color: lightblue;
+  margin: 0 auto;
+  width: 500px;
+  height: 500px;
+  font-size: 45px;
+  color: black;
+
+
+}
+.buttons {
+    width: 120px;
+    height: 125px;
+    font-size: 15px;
+    margin-top: 65px;
+    z-index: 2;
+}
+#button-pos {
+ margin-left: 62px;
+ font-size: 15px;
+}
+#numbers {
+  font-size: 45px;
+  color: black;
+  margin-left: 155px;
+}
+#Red {
+  background-color: red;
+  width: 60px;
+  height: 190px;
+  float: right;
+
+}
+#Green {
+  background-color: green;
+  width: 60px;
+  height: 190px;
+  float: left;
+}
