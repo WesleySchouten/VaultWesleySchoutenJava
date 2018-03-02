@@ -7,7 +7,7 @@ body  {
   background-color: lightblue;
   margin: 0 auto;
   width: 500px;
-  height: 500px;
+  height: 600px;
   font-size: 45px;
   color: black;
 
@@ -26,7 +26,8 @@ body  {
 }
 #numbers {
   font-size: 45px;
-  color: black;
+  color: white;
+  font-family: monospace;
   margin-left: 155px;
 }
 #Red {
@@ -41,4 +42,18 @@ body  {
   width: 60px;
   height: 190px;
   float: left;
+}
+#correct {
+  text-align:  center;
+  vertical-align: middle;
+  color: white;
+  font-family: monospace;
+
+}
+#Incorrect{
+  text-align:  center;
+  vertical-align: middle;
+  color: white;
+  font-family: monospace;
+
 }

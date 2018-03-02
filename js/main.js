@@ -15,10 +15,13 @@ var green = document.getElementById("Green");
 var red = document.getElementById("Red");
 var wrongaudio = new Audio('snd/correct.mp3');
 var correctaudio = new Audio('snd/wrong.mp3');
-
+var correct = document.getElementById("correct");
+var Incorrect = document.getElementById("Incorrect");
 //counter start at zero
 var intervalTimer = 0;
 
+correct.style.visibility = 'hidden';
+Incorrect.style.visibility = 'hidden';
 
 function getNumber(button) {
 
@@ -64,6 +67,7 @@ else {
        	}else {
        		green.style.visibility = 'hidden';
        	}
+        correct.style.visibility = 'visible';
 
        	//check if the interval has runned ten times
        	if(intervalTimer == 100) {
@@ -78,7 +82,9 @@ else {
       }else{
 
       setTimeout(function () { location.reload(true); }, 5000);
+        Incorrect.style.visibility = 'visible';
       var blink = setInterval(function() {
+
 
         correctaudio.play();
 
