@@ -13,6 +13,8 @@ var numberThree;
 var numberButtons = document.getElementsByClassName('buttons');
 var green = document.getElementById("Green");
 var red = document.getElementById("Red");
+var wrongaudio = new Audio('snd/correct.mp3');
+var correctaudio = new Audio('snd/wrong.mp3');
 
 //counter start at zero
 var intervalTimer = 0;
@@ -51,6 +53,7 @@ else {
      if (numberOne == 3 && numberTwo == 1 && numberThree == 1){
        var blink = setInterval(function() {
 
+         wrongaudio.play();
        	//add +1 every time the setinterval function runs
        	intervalTimer++;
 
@@ -76,6 +79,9 @@ else {
 
       setTimeout(function () { location.reload(true); }, 5000);
       var blink = setInterval(function() {
+
+        correctaudio.play();
+
 
        //add +1 every time the setinterval function runs
        intervalTimer++;
